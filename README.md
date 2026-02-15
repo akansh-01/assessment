@@ -467,28 +467,3 @@ backend/src/main/java/com/project/incident/
 └── specification/
     └── IncidentSpecification.java    # JPA Specifications for dynamic queries
 ```
-
-## Pushing to GitHub
-
-1. **Stage and commit your changes** (from the repo root, i.e. the folder that contains `backend/` and `frontend/`):
-   ```bash
-   git add .
-   git status
-   git commit -m "Initial commit: Incident Tracker backend API with repo structure"
-   ```
-
-2. **Create a new repository on GitHub** (do not add a README or .gitignore there).
-
-3. **Add the remote and push** (replace `YOUR_USERNAME` and `YOUR_REPO` with your GitHub username and repo name):
-   ```bash
-   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
-   git branch -M main
-   git push -u origin main
-   ```
-
-   If the repo already had a remote (e.g. from cloning), use:
-   ```bash
-   git push -u origin main
-   ```
-
-4. Share the repository link with the hiring team.
