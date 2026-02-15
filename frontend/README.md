@@ -26,13 +26,6 @@ npm run dev
 ```
 The application will be available at `http://localhost:5173`.
 
-## Build for Production
-To create a production build:
-```bash
-npm run build
-```
-The output will be in the `dist` folder.
-
 ## API Integration
 The frontend is configured to proxy API requests to `http://localhost:8080`.
 Ensure your backend exposes the following endpoints:
