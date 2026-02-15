@@ -3,8 +3,8 @@ spring:
     name: incident
   datasource:
     url: jdbc:postgresql://localhost:5432/incident_db
-    username: postgres
-    password: root
+    username: {postgres_username}
+    password: {postgres_password}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
