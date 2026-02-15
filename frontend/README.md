@@ -1,5 +1,42 @@
-# Incident Tracker – Frontend
+# Incident Tracker Frontend
 
-This folder is reserved for the Incident Tracker frontend application.
+This is the frontend application for the Incident Tracker, built with React and Vite.
 
-The backend API runs from the `../backend` directory. See the root [README](../README.md) for setup and API documentation.
+## Features
+- **Incident List**: View incidents with server-side pagination, sorting, and filtering.
+- **Search**: Debounced search for incident titles.
+- **Create**: Create new incidents with validation.
+- **Detail**: View and edit incident details.
+- **Design**: Clean, responsive UI with state-based badges.
+
+## Prerequisites
+- Node.js (v18+)
+- Backend server running on `http://localhost:8080` (or configure proxy in `vite.config.js`)
+
+## Installation
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+## Running Locally
+Start the development server:
+```bash
+npm run dev
+```
+The application will be available at `http://localhost:5173`.
+
+## Build for Production
+To create a production build:
+```bash
+npm run build
+```
+The output will be in the `dist` folder.
+
+## API Integration
+The frontend is configured to proxy API requests to `http://localhost:8080`.
+Ensure your backend exposes the following endpoints:
+- `GET /api/incidents` (supports page, size, sort, title, service, severity, status)
+- `POST /api/incidents`
+- `GET /api/incidents/:id`
+- `PATCH /api/incidents/:id`
